@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PT.MainPage"
+             BackgroundColor="#353935">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            
+                <Frame HeightRequest="140"
+                       WidthRequest="140"
+                       CornerRadius="70"
+                       HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                       IsClippedToBounds="True"
+                       Padding="0"
+                       BorderColor="Yellow"
+                       Margin="0"
+                       >
+
+                    <Image
+                        Aspect="AspectFit"
+                        Source="vangogoh.png"
+                        SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                        HeightRequest="140"
+                        WidthRequest="140"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+                    
+                </Frame>
+            
+                <Label Text="Vincet van Gogh"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       TextColor="white"
+                       FontSize="Large">
+                </Label>
+            
+                <Label Text="Dutch, 1853 - 1890"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                        TextColor="white"
+                       FontSize="Micro">
+                </Label>
+            <StackLayout Orientation="Vertical" Padding="10">
+                <Label x:Name="DescriptionLabel"
+                Text="Was a Dutch Post-Impressionist painter who is among the most famous and influential..."
+                       FontSize="Caption"
+                       TextColor="White"
+                       LineBreakMode="TailTruncation"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+            </Label>
+            <Button x:Name="ReadMoreButton" 
+            Text="Read More" BackgroundColor="Transparent" ></Button>
+            </StackLayout>
+            <VerticalStackLayout>
+                <BoxView   
+                      Color="Gray"  
+                      Margin="0,10,0,0"                   
+                      HeightRequest="2"  
+                      HorizontalOptions="Center" />
+            </VerticalStackLayout>
+            <Grid Margin="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+
+                <Label Grid.Column="0" Grid.Row="0" Text="$7.5m " HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="$3.5m " HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                <Label Grid.Column="2" Grid.Row="0" Text="+59% " HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                <Label Grid.Column="3" Grid.Row="0" Text="12" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+
+                <Label Grid.Column="0" Grid.Row="1" Text="Record" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="Average" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+                <Label Grid.Column="2" Grid.Row="1" Text="General" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                <Label Grid.Column="3" Grid.Row="1" Text="Items" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+
+            </Grid>
+            <VerticalStackLayout>
+                <BoxView   
+                      Color="Gray"  
+                      Margin="0,10,0,0"                   
+                      HeightRequest="2"  
+                      HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+
+            <Label Text="Other Van Gogh Work" TextColor="White" Margin="10" FontSize="Medium" ></Label>
+
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Image Grid.Column="0" Grid.Row="0" Source="cat.png"  ></Image>
+                <Image Grid.Column="1" Grid.Row="0" Source="bird.png"></Image>
+                <Label Text="Cat &#10;$100" Grid.Row="1" Grid.Column="0" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+                <Label Text="Bird &#10; $100" Grid.Row="1" Grid.Column="1" TextColor="White"  HorizontalOptions="Center" VerticalOptions="Center" ></Label>
+
+
+
+            </Grid>
+
+        </VerticalStackLayout>
+
+    
+    </ScrollView>
+
+</ContentPage>
